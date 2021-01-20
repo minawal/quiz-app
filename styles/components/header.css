@@ -1,0 +1,8 @@
+.header {
+  background-color: green;
+}
+
+.header__heading {
+  color: white;
+  text-align: center;
+}
