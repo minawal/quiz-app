@@ -1,0 +1,71 @@
+.quiz-card {
+  overflow: scroll;
+}
+
+.quiz-card__section {
+  padding: 30px;
+  margin: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: relative;
+}
+
+.quiz-card__heading {
+  margin: 0;
+  font-size: 1em;
+}
+
+.quiz-card__question {
+  font-size: 0.8em;
+}
+
+.quiz-card__answer {
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.quiz-card__summary {
+  list-style-type: none;
+  text-align: center;
+  padding: 5px;
+  font-size: 1em;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+}
+
+.quiz-card__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.quiz-card__li--item {
+  font-size: 0.8em;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.quiz-card__bookmark-on {
+  position: absolute;
+  color: green;
+  font-size: 30px;
+  top: -10px;
+  right: -5px;
+}
+
+.quiz-card__bookmark-off {
+  position: absolute;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 30px;
+  top: -10px;
+  right: -5px;
+}
