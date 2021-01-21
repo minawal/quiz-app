@@ -23,3 +23,7 @@ input,
 button {
   font-size: 1em;
 }
+
+.lower-gap {
+  height: 50px;
+}

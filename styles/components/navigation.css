@@ -11,13 +11,18 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 48px;
   justify-items: center;
-  align-items: stretch;
+  align-items: center;
   height: 100%;
 }
 
-.navigation__icon {
+.navigation__link {
   font-size: 24px;
   color: white;
   align-self: center;
   margin-top: 5px;
+  padding: 0 10px;
+}
+
+#navigation__home {
+  border-bottom: 3px solid white;
 }

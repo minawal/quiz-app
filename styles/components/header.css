@@ -1,5 +1,12 @@
 .header {
+}
+
+.header__fixed {
   background-color: green;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
 .header__heading {
