@@ -3,9 +3,7 @@
   background-color: green;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 48px;
-  justify-items: center;
   align-items: center;
-  height: 100%;
   box-shadow: 0 0.5px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -13,10 +11,10 @@
   font-size: 24px;
   color: white;
   align-self: center;
-  margin-top: 5px;
-  padding: 0 10px;
+  margin: 5px 20% 0;
+  text-align: center;
 }
 
-#navigation__home {
+.navigation__underline {
   border-bottom: 3px solid white;
 }

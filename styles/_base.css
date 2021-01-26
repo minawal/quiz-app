@@ -19,7 +19,11 @@ h1 {
   font-size: 1em;
 }
 
+label {
+  font-size: 1em;
+}
+
 input,
 button {
-  font-size: 1em;
+  font-size: 0.8em;
 }

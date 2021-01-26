@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Quiz App</title>
+    <title>My Bookmarks</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link
       rel="stylesheet"
@@ -14,10 +14,11 @@
   <body class="app-grid">
     <header class="header">
       <div class="header__fixed">
-        <h1 class="header__heading">My Quiz App</h1>
+        <h1 class="header__heading">My Bookmarks</h1>
       </div>
     </header>
     <main class="quiz-card">
+      <p class="quiz-card__counter">You have bookmarked <b>1</b> question.</p>
       <section class="quiz-card__section">
         <h2 class="quiz-card__heading">Question 1</h2>
         <p class="quiz-card__question">
@@ -38,46 +39,12 @@
           <i class="fas fa-bookmark"></i>
         </div>
       </section>
-      <section class="quiz-card__section">
-        <h2 class="quiz-card__heading">Question 2</h2>
-        <p class="quiz-card__question">Wer ist der reichste Mensch der Welt?</p>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__summary">Show answer</summary>
-          <p class="quiz-card__answer">
-            Elon Musk ist der reichste Mensch der Welt.
-          </p>
-        </details>
-        <ul class="quiz-card__list">
-          <li class="quiz-card__li--item">money</li>
-          <li class="quiz-card__li--item">business</li>
-          <li class="quiz-card__li--item">investment</li>
-        </ul>
-        <div class="quiz-card__bookmark-off" role="button">
-          <i class="fas fa-bookmark"></i>
-        </div>
-      </section>
-      <section class="quiz-card__section">
-        <h2 class="quiz-card__heading">Question 3</h2>
-        <p class="quiz-card__question">Wie hoch ist der Mount Everest?</p>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__summary">Show answer</summary>
-          <p class="quiz-card__answer">Der Mount Everest ist 8849m hoch.</p>
-        </details>
-        <ul class="quiz-card__list">
-          <li class="quiz-card__li--item">nature</li>
-          <li class="quiz-card__li--item">geography</li>
-          <li class="quiz-card__li--item">sports</li>
-        </ul>
-        <div class="quiz-card__bookmark-off" role="button">
-          <i class="fas fa-bookmark"></i>
-        </div>
-      </section>
     </main>
     <nav class="navigation">
-      <a href="/index.html" class="navigation__link navigation__underline"
+      <a href="/index.html" class="navigation__link"
         ><i class="fas fa-home"></i
       ></a>
-      <a href="/bookmarks.html" class="navigation__link"
+      <a href="/bookmarks.html" class="navigation__link navigation__underline"
         ><i class="fas fa-bookmark"></i
       ></a>
       <a href="/create.html" class="navigation__link"
