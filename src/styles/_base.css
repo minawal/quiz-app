@@ -27,3 +27,7 @@ input,
 button {
   font-size: 0.8em;
 }
+
+.hidden {
+  display: none;
+}
