@@ -8,6 +8,8 @@
   border: 1px solid black;
   border-radius: 3px;
   position: relative;
+  background-color: white;
+  color: black;
 }
 
 .quiz-card__heading {
@@ -79,14 +81,6 @@
   border-radius: 3px;
 }
 
-.quiz-card__bookmark-on {
-  position: absolute;
-  color: green;
-  font-size: 50px;
-  top: -15px;
-  right: -5px;
-}
-
 .quiz-card__bookmark-off {
   position: absolute;
   color: white;
@@ -94,4 +88,9 @@
   font-size: 50px;
   top: -15px;
   right: -5px;
+}
+
+.bookmark-on {
+  color: green;
+  text-shadow: none;
 }

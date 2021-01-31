@@ -1,7 +1,5 @@
 import { doc } from 'prettier'
 
-console.log('hello world')
-
 const headerHome = document.querySelector('[data-js="header-home"')
 const headerBookmarks = document.querySelector('[data-js="header-bookmarks"]')
 const headerCreate = document.querySelector('[data-js="header-create"]')
@@ -83,4 +81,66 @@ buttonProfile.addEventListener('click', () => {
   buttonBookmarks.classList.remove('navigation__underline')
   buttonCreate.classList.remove('navigation__underline')
   buttonProfile.classList.add('navigation__underline')
+})
+
+// Bookmarks Toggle
+
+const bookmarks = document.querySelectorAll('[data-js="bookmark"]')
+
+bookmarks.forEach(bookmark => {
+  bookmark.addEventListener('click', () => {
+    bookmark.classList.toggle('bookmark-on')
+  })
+})
+
+// Question-Answer Toggle
+
+const cards = document.querySelectorAll('[data-js="card"]')
+
+cards.forEach(card => {
+  const show = card.querySelector('[data-js="show"]')
+  const answer = card.querySelector('[data-js="answer"]')
+
+  show.addEventListener('click', () => {
+    answer.classList.toggle('hidden')
+  })
+})
+
+// Form Submit
+
+const forms = document.querySelector('[data-js="form"]')
+const addQuestion = document.querySelector('[data-js="add-question"]')
+
+forms.addEventListener('submit', event => {
+  event.preventDefault()
+  forms.reset()
+  addQuestion.focus()
+
+  formSections.forEach(reset => {
+    const counter = reset.querySelector('[data-js="counter"]')
+    counter.textContent = '200/200'
+  })
+})
+
+// Form Counter
+
+const formSections = document.querySelectorAll('[data-js="form-section"]')
+
+formSections.forEach(form => {
+  const textarea = form.querySelector('[data-js="textarea"]')
+  const counter = form.querySelector('[data-js="counter"]')
+
+  textarea.addEventListener('input', () => {
+    const textLength = textarea.value.length
+    counter.textContent = 200 - textLength + '/200'
+  })
+})
+
+// Darkmode
+
+const checkbox = document.querySelector('[data-js="checkbox-darkmode"]')
+const body = document.querySelector('[data-js="body"]')
+
+checkbox.addEventListener('change', () => {
+  body.classList.add('dark-mode')
 })
