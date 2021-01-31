@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body class="app-grid">
+  <body class="app-grid" data-js="body">
     <header class="header">
       <div class="header__fixed">
         <h1 class="header__heading" data-js="header-home">My Quiz App</h1>
@@ -27,14 +27,16 @@
       </div>
     </header>
     <main class="quiz-card" data-js="home">
-      <section class="quiz-card__section">
+      <section class="quiz-card__section" data-js="card">
         <h2 class="quiz-card__heading">Question 1</h2>
         <p class="quiz-card__question">
           Wie viele Menschen leben in Deutschland?
         </p>
         <details class="quiz-card__details">
-          <summary class="quiz-card__summary">Show answer</summary>
-          <p class="quiz-card__answer">
+          <summary class="quiz-card__summary" data-js="show">
+            Show answer
+          </summary>
+          <p class="quiz-card__answer hidden" data-js="answer">
             Es leben ca 83 Millionen Menschen in Deutschland.
           </p>
         </details>
@@ -43,16 +45,18 @@
           <li class="quiz-card__li--item">geography</li>
           <li class="quiz-card__li--item">germany</li>
         </ul>
-        <div class="quiz-card__bookmark-on" role="button">
+        <div class="quiz-card__bookmark-off" role="button" data-js="bookmark">
           <i class="fas fa-bookmark"></i>
         </div>
       </section>
-      <section class="quiz-card__section">
+      <section class="quiz-card__section" data-js="card">
         <h2 class="quiz-card__heading">Question 2</h2>
         <p class="quiz-card__question">Wer ist der reichste Mensch der Welt?</p>
         <details class="quiz-card__details">
-          <summary class="quiz-card__summary">Show answer</summary>
-          <p class="quiz-card__answer">
+          <summary class="quiz-card__summary" data-js="show">
+            Show answer
+          </summary>
+          <p class="quiz-card__answer hidden" data-js="answer">
             Elon Musk ist der reichste Mensch der Welt.
           </p>
         </details>
@@ -61,37 +65,43 @@
           <li class="quiz-card__li--item">business</li>
           <li class="quiz-card__li--item">investment</li>
         </ul>
-        <div class="quiz-card__bookmark-off" role="button">
+        <div class="quiz-card__bookmark-off" role="button" data-js="bookmark">
           <i class="fas fa-bookmark"></i>
         </div>
       </section>
-      <section class="quiz-card__section">
+      <section class="quiz-card__section" data-js="card">
         <h2 class="quiz-card__heading">Question 3</h2>
         <p class="quiz-card__question">Wie hoch ist der Mount Everest?</p>
         <details class="quiz-card__details">
-          <summary class="quiz-card__summary">Show answer</summary>
-          <p class="quiz-card__answer">Der Mount Everest ist 8849m hoch.</p>
+          <summary class="quiz-card__summary" data-js="show">
+            Show answer
+          </summary>
+          <p class="quiz-card__answer hidden" data-js="answer">
+            Der Mount Everest ist 8849m hoch.
+          </p>
         </details>
         <ul class="quiz-card__list">
           <li class="quiz-card__li--item">nature</li>
           <li class="quiz-card__li--item">geology</li>
           <li class="quiz-card__li--item">sports</li>
         </ul>
-        <div class="quiz-card__bookmark-off" role="button">
+        <div class="quiz-card__bookmark-off" role="button" data-js="bookmark">
           <i class="fas fa-bookmark"></i>
         </div>
       </section>
     </main>
     <main class="quiz-card hidden" data-js="bookmarks">
       <p class="quiz-card__counter">You have bookmarked <b>1</b> question.</p>
-      <section class="quiz-card__section">
+      <section class="quiz-card__section" data-js="card">
         <h2 class="quiz-card__heading">Question 1</h2>
         <p class="quiz-card__question">
           Wie viele Menschen leben in Deutschland?
         </p>
         <details class="quiz-card__details">
-          <summary class="quiz-card__summary">Show answer</summary>
-          <p class="quiz-card__answer">
+          <summary class="quiz-card__summary" data-js="show">
+            Show answer
+          </summary>
+          <p class="quiz-card__answer hidden" data-js="answer">
             Es leben ca 83 Millionen Menschen in Deutschland.
           </p>
         </details>
@@ -100,47 +110,75 @@
           <li class="quiz-card__li--item">geography</li>
           <li class="quiz-card__li--item">germany</li>
         </ul>
-        <div class="quiz-card__bookmark-on" role="button">
+        <div class="quiz-card__bookmark-off" role="button" data-js="bookmark">
           <i class="fas fa-bookmark"></i>
         </div>
       </section>
     </main>
     <main class="form hidden" data-js="create">
-      <section class="form__section">
-        <label for="form__add-question" class="form__label"
-          >Add a question</label
-        >
-        <textarea
-          type="text"
-          class="form__text"
-          id="form__add-question"
-          name="question"
-        ></textarea>
-      </section>
-      <section class="form__section">
-        <label for="form__add-answer" class="form__label">Add an answer</label>
-        <textarea
-          type="text"
-          class="form__text"
-          id="form__add-answer"
-          name="answer"
-        ></textarea>
-      </section>
-      <section class="form__section">
-        <label for="form__add-tags" class="form__label">Add some tags</label>
-        <input
-          type="text"
-          class="form__tags"
-          id="form__add-tags"
-          name="tags"
-          placeholder="Divide tags by comma"
-        />
-      </section>
-      <section class="form__button-section">
-        <button class="form__button">Submit</button>
-      </section>
+      <form data-js="form">
+        <section class="form__section" data-js="form-section">
+          <label
+            for="form__add-question"
+            class="form__label"
+            data-js="add-question"
+          >
+            Add a question</label
+          >
+          <textarea
+            type="text"
+            maxlength="200"
+            class="form__text"
+            id="form__add-question"
+            name="question"
+            data-js="textarea"
+          ></textarea>
+          <span class="form__counter" data-js="counter">200/200</span>
+        </section>
+        <section class="form__section" data-js="form-section">
+          <label for="form__add-answer" class="form__label"
+            >Add an answer</label
+          >
+          <textarea
+            type="text"
+            maxlength="200"
+            class="form__text"
+            id="form__add-answer"
+            name="answer"
+            data-js="textarea"
+          ></textarea>
+          <span class="form__counter" data-js="counter">200/200</span>
+        </section>
+        <section class="form__section" data-js="form-section">
+          <label for="form__add-tags" class="form__label">Add some tags</label>
+          <input
+            type="text"
+            maxlength="200"
+            class="form__tags"
+            id="form__add-tags"
+            name="tags"
+            placeholder="Divide tags by comma"
+            data-js="textarea"
+          />
+          <span class="form__counter" data-js="counter">200/200</span>
+        </section>
+        <section class="form__button-section">
+          <button class="form__button">Submit</button>
+        </section>
+      </form>
     </main>
-    <main class="hidden" data-js="profile"></main>
+    <main class="hidden" data-js="profile">
+      <form class="profile__form">
+        <label for="darkmode" class="profile__label">
+          Darkmode aktivieren
+          <input
+            type="checkbox"
+            class="profile__input"
+            data-js="check-darkmode"
+          />
+        </label>
+      </form>
+    </main>
     <nav class="navigation">
       <a class="navigation__link navigation__underline" data-js="button-home"
         ><i class="fas fa-home"></i
