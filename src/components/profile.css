@@ -1,3 +1,9 @@
 .profile__form {
   padding: 30px;
 }
+
+.profile__input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
