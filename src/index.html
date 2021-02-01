@@ -26,7 +26,7 @@
         </h1>
       </div>
     </header>
-    <main class="quiz-card" data-js="home">
+    <main class="quiz-card" data-js="page" data-name="home">
       <section class="quiz-card__section" data-js="card">
         <h2 class="quiz-card__heading">Question 1</h2>
         <p class="quiz-card__question">
@@ -90,7 +90,7 @@
         </div>
       </section>
     </main>
-    <main class="quiz-card hidden" data-js="bookmarks">
+    <main class="quiz-card hidden" data-js="page" data-name="bookmarks">
       <p class="quiz-card__counter">You have bookmarked <b>1</b> question.</p>
       <section class="quiz-card__section" data-js="card">
         <h2 class="quiz-card__heading">Question 1</h2>
@@ -115,7 +115,7 @@
         </div>
       </section>
     </main>
-    <main class="form hidden" data-js="create">
+    <main class="form hidden" data-js="page" data-name="create">
       <form data-js="form">
         <section class="form__section" data-js="form-section">
           <label
@@ -167,7 +167,7 @@
         </section>
       </form>
     </main>
-    <main class="hidden" data-js="profile">
+    <main class="hidden" data-js="page" data-name="profile">
       <form class="profile__form">
         <label for="darkmode" class="profile__label">
           Darkmode aktivieren
@@ -180,16 +180,19 @@
       </form>
     </main>
     <nav class="navigation">
-      <a class="navigation__link navigation__underline" data-js="button-home"
+      <a
+        class="navigation__link navigation__underline"
+        data-js="nav-button"
+        data-name="home"
         ><i class="fas fa-home"></i
       ></a>
-      <a class="navigation__link" data-js="button-bookmarks"
+      <a class="navigation__link" data-js="nav-button" data-name="bookmarks"
         ><i class="fas fa-bookmark"></i
       ></a>
-      <a class="navigation__link" data-js="button-create"
+      <a class="navigation__link" data-js="nav-button" data-name="create"
         ><i class="fas fa-plus-square"></i
       ></a>
-      <a class="navigation__link" data-js="button-profile"
+      <a class="navigation__link" data-js="nav-button" data-name="profile"
         ><i class="fas fa-user-alt"></i
       ></a>
     </nav>
