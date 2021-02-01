@@ -94,3 +94,9 @@
   color: green;
   text-shadow: none;
 }
+
+.quiz-card__counter {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 30px 30px 0;
+}

@@ -141,6 +141,6 @@ formSections.forEach(form => {
 const checkbox = document.querySelector('[data-js="checkbox-darkmode"]')
 const body = document.querySelector('[data-js="body"]')
 
-checkbox.addEventListener('change', () => {
+checkbox.addEventListener('input', () => {
   body.classList.add('dark-mode')
 })
